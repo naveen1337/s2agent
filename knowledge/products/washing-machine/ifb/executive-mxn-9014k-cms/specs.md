@@ -9,6 +9,14 @@ category: washing-machine
 brand: ifb
 model: IFB Executive MXN 9014K CMS
 doc: model-specs
+sources:
+  - id: oem-specsheet
+    resource: "OEM spec sheet for IFB Executive MXN 9014K CMS (attach canonical URL or references/ path)"
+    title: OEM specifications
+  - id: oem-warranty
+    resource: "OEM warranty statement for IFB Executive MXN 9014K CMS (attach canonical URL or references/ path)"
+    title: OEM warranty terms
+stale_after: 2026-10-14T00:00:00Z
 ---
 
 # IFB Executive MXN 9014K CMS — Specs & Selling Info
@@ -34,3 +42,17 @@ doc: model-specs
 ## Price / Offers (TODO)
 
 - MRP, offer price, EMI, exchange.
+
+## Provenance
+
+Fill claims from `sources` above and cite them with footnotes keyed to the source `id`, e.g. warranty terms.[^oem-warranty]
+
+[^oem-warranty]: OEM warranty terms
+
+## Financing
+
+EMI figures are produced by [the EMI computation](/computations/emi.md); quote only attested values.
+
+## Related
+
+* [Brand overview](/washing-machine/ifb/index.md) - IFB models we sell.

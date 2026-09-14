@@ -9,6 +9,13 @@ category: smartphone
 brand: samsung
 model: Samsung Galaxy A36 5G
 doc: model-troubleshooting
+sources:
+  - id: oem-manual
+    resource: "OEM owner's / service manual for Samsung Galaxy A36 5G (attach canonical URL or references/ path)"
+    title: OEM manual
+  - id: service-notes
+    resource: "Internal service notes for Samsung Galaxy A36 5G (attach bundle path when available)"
+    title: Service notes
 ---
 
 # Samsung Galaxy A36 5G — Model-Specific Troubleshooting
@@ -26,3 +33,8 @@ Model-specific issues, error codes, and fixes for `Samsung Galaxy A36 5G`.
 ## When to Escalate
 
 - Service-center triggers, parts likely needed.
+
+## Related
+
+* [Brand troubleshooting](/smartphone/samsung/troubleshooting.md) - Brand-specific error codes and fixes for Samsung smartphones.
+* [General troubleshooting](/smartphone/troubleshooting-general.md) - Category-level troubleshooting for all smartphones, across brands and models.

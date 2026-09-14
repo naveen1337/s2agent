@@ -8,6 +8,10 @@ generated: {by: s2agent/scaffold, at: 2026-09-14T00:00:00Z}
 category: tv
 brand: xiaomi
 doc: brand-troubleshooting
+sources:
+  - id: oem-support
+    resource: "Xiaomi official support portal (attach canonical URL)"
+    title: Xiaomi support
 ---
 
 # xiaomi TV — Brand-Specific Troubleshooting
@@ -25,3 +29,8 @@ Issues, error codes, and service流程 specific to xiaomi tvs.
 ## Warranty / Service Notes
 
 - Standard warranty terms, service booking steps.
+
+## Related
+
+* [General troubleshooting](/tv/troubleshooting-general.md) - Category-level troubleshooting for all tvs, across brands and models.
+* [Xiaomi X Pro troubleshooting](/tv/xiaomi/x-pro/troubleshooting.md) - Model-specific issues and fixes for Xiaomi X Pro.

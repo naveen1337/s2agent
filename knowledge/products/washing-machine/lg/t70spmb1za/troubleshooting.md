@@ -9,6 +9,13 @@ category: washing-machine
 brand: lg
 model: LG T70SPMB1ZA
 doc: model-troubleshooting
+sources:
+  - id: oem-manual
+    resource: "OEM owner's / service manual for LG T70SPMB1ZA (attach canonical URL or references/ path)"
+    title: OEM manual
+  - id: service-notes
+    resource: "Internal service notes for LG T70SPMB1ZA (attach bundle path when available)"
+    title: Service notes
 ---
 
 # LG T70SPMB1ZA — Model-Specific Troubleshooting
@@ -26,3 +33,8 @@ Model-specific issues, error codes, and fixes for `LG T70SPMB1ZA`.
 ## When to Escalate
 
 - Service-center triggers, parts likely needed.
+
+## Related
+
+* [Brand troubleshooting](/washing-machine/lg/troubleshooting.md) - Brand-specific error codes and fixes for LG washing machines.
+* [General troubleshooting](/washing-machine/troubleshooting-general.md) - Category-level troubleshooting for all washing machines, across brands and models.

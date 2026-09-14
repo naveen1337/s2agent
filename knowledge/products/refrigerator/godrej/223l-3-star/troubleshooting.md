@@ -9,6 +9,13 @@ category: refrigerator
 brand: godrej
 model: Godrej 223L 3-Star
 doc: model-troubleshooting
+sources:
+  - id: oem-manual
+    resource: "OEM owner's / service manual for Godrej 223L 3-Star (attach canonical URL or references/ path)"
+    title: OEM manual
+  - id: service-notes
+    resource: "Internal service notes for Godrej 223L 3-Star (attach bundle path when available)"
+    title: Service notes
 ---
 
 # Godrej 223L 3-Star — Model-Specific Troubleshooting
@@ -26,3 +33,8 @@ Model-specific issues, error codes, and fixes for `Godrej 223L 3-Star`.
 ## When to Escalate
 
 - Service-center triggers, parts likely needed.
+
+## Related
+
+* [Brand troubleshooting](/refrigerator/godrej/troubleshooting.md) - Brand-specific error codes and fixes for Godrej refrigerators.
+* [General troubleshooting](/refrigerator/troubleshooting-general.md) - Category-level troubleshooting for all refrigerators, across brands and models.

@@ -9,6 +9,13 @@ category: ac
 brand: samsung
 model: Samsung WindFree
 doc: model-troubleshooting
+sources:
+  - id: oem-manual
+    resource: "OEM owner's / service manual for Samsung WindFree (attach canonical URL or references/ path)"
+    title: OEM manual
+  - id: service-notes
+    resource: "Internal service notes for Samsung WindFree (attach bundle path when available)"
+    title: Service notes
 ---
 
 # Samsung WindFree — Model-Specific Troubleshooting
@@ -26,3 +33,8 @@ Model-specific issues, error codes, and fixes for `Samsung WindFree`.
 ## When to Escalate
 
 - Service-center triggers, parts likely needed.
+
+## Related
+
+* [Brand troubleshooting](/ac/samsung/troubleshooting.md) - Brand-specific error codes and fixes for Samsung acs.
+* [General troubleshooting](/ac/troubleshooting-general.md) - Category-level troubleshooting for all acs, across brands and models.
