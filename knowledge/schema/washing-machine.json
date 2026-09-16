@@ -1,0 +1,66 @@
+{
+  "$id": "https://s2agent.local/schema/washing-machine.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Washing machine product. Extends product.json.",
+  "title": "WashingMachine",
+  "description": "Washing machine product — extends Base Product (product.json).",
+  "allOf": [
+    { "$ref": "./product.json" },
+    {
+      "type": "object",
+      "required": ["product_type", "load_type", "capacity_kg"],
+      "properties": {
+        "product_type": {
+          "const": "washing-machine",
+          "description": "Discriminator. Export as schema:category / additionalType."
+        },
+        "load_type": {
+          "type": "string",
+          "enum": ["front-load", "top-load", "semi-automatic", "washer-dryer"]
+        },
+        "capacity_kg": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "examples": [8]
+        },
+        "max_spin_rpm": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "examples": [1200]
+        },
+        "wash_programs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": [["cotton", "quick-wash", "delicates"]]
+        },
+        "inverter_motor": { "type": "boolean", "default": true },
+        "inbuilt_heater": { "type": "boolean", "default": false },
+        "star_rating": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "warranty_motor_years": { "type": "integer", "minimum": 0 },
+        "warranty_product_years": { "type": "integer", "minimum": 0 }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$examples": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "LG FHB1208Z4P",
+      "alias_names": ["FHB1208Z4P"],
+      "model_code": "FHB1208Z4P",
+      "manufacturer": "LG",
+      "parent_version": null,
+      "current_version": "2025.1",
+      "sector": ["home-appliances", "laundry"],
+      "product_type": "washing-machine",
+      "load_type": "front-load",
+      "capacity_kg": 8,
+      "max_spin_rpm": 1200
+    }
+  ]
+}

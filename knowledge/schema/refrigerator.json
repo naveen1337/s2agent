@@ -1,0 +1,71 @@
+{
+  "$id": "https://s2agent.local/schema/refrigerator.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Refrigerator product. Extends product.json.",
+  "title": "Refrigerator",
+  "description": "Refrigerator product — extends Base Product (product.json).",
+  "allOf": [
+    { "$ref": "./product.json" },
+    {
+      "type": "object",
+      "required": ["product_type", "capacity_litres", "door_configuration", "defrost_type"],
+      "properties": {
+        "product_type": {
+          "const": "refrigerator",
+          "description": "Discriminator. Export as schema:category / additionalType."
+        },
+        "capacity_litres": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "examples": [223]
+        },
+        "door_configuration": {
+          "type": "string",
+          "enum": ["single-door", "double-door", "side-by-side", "french-door", "multi-door"]
+        },
+        "defrost_type": {
+          "type": "string",
+          "enum": ["direct-cool", "frost-free"]
+        },
+        "star_rating": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "compressor_type": {
+          "type": "string",
+          "enum": ["inverter", "reciprocating", "linear-inverter", "digital-inverter"]
+        },
+        "shelf_material": {
+          "type": "string",
+          "enum": ["toughened-glass", "wire", "plastic"]
+        },
+        "convertible_modes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "warranty_compressor_years": { "type": "integer", "minimum": 0 },
+        "warranty_product_years": { "type": "integer", "minimum": 0 }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$examples": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "LG GLD2156ZHSL",
+      "alias_names": ["GLD2156ZHSL"],
+      "model_code": "GLD2156ZHSL",
+      "manufacturer": "LG",
+      "parent_version": null,
+      "current_version": "2025.1",
+      "sector": ["home-appliances", "cooling"],
+      "product_type": "refrigerator",
+      "capacity_litres": 215,
+      "door_configuration": "double-door",
+      "defrost_type": "frost-free",
+      "star_rating": 3
+    }
+  ]
+}
