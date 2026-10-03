@@ -30,9 +30,27 @@ FastAPI and uvicorn are declared dependencies but not yet used — the intended 
 uv sync                 # install dependencies
 uv run main.py          # run the agent script
 uv run uvicorn ...      # future: serve via FastAPI (not implemented yet)
+uv run pytest -q        # run tests (pytest configured, testpaths=["tests"])
 ```
 
-No tests or linters are configured yet.
+## Python Style
+
+All Python follows the **Google Python Style Guide**
+(https://google.github.io/styleguide/pyguide.html):
+
+- **Imports**: single general format, no `try/except` import fallbacks.
+  - Same package → explicit relative import: `from .product import ProductBase`
+  - Cross-package → absolute import from repo root: `from knowledge.schema import AirConditioner`
+  - Order: stdlib, third-party, first-party; `from __future__ import annotations` first.
+  - Run package modules with `uv run python -m knowledge.schema.ac`, never as bare scripts.
+- **Packages**: every package has `__init__.py`; module filenames use `snake_case`
+  (never hyphens — `washing_machine.py`, not `washing-machine.py`).
+- **Naming**: `CapWords` classes, `snake_case` functions/variables/modules,
+  `UPPER_SNAKE_CASE` constants.
+- **Docstrings**: Google-style docstrings on all public modules, classes, functions.
+- **Pydantic v2**: `ConfigDict(extra="forbid")` on validating models;
+  `Field(...)` descriptions preserved; shared base classes in `product.py`,
+  category models inherit (`AirConditioner(ProductBase)`).
 
 ## Conventions & Notes
 
